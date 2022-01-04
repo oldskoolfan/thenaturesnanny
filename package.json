@@ -1,0 +1,26 @@
+{
+  "name": "thenaturesnanny",
+  "version": "3.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oldskoolfan/thenaturesnanny.git"
+  },
+  "author": "afh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oldskoolfan/thenaturesnanny/issues"
+  },
+  "homepage": "https://github.com/oldskoolfan/thenaturesnanny#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.45.2"
+  }
+}
