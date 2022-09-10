@@ -32,9 +32,9 @@
     // console.log('sending email...');
 
     // Email.send({
-    //   SecureToken: '704854d9-8d1d-4dad-91d6-e7a3b8979dda',
-    //   To: 'harris.1305@gmail.com',
-    //   From: 'andrew@oldskoolfan.net',
+    //   SecureToken: '',
+    //   To: '',
+    //   From: '',
     //   Subject: 'test',
     //   Body: 'this is only a test',
     // }).then(msg => alert(msg));
