@@ -48,7 +48,8 @@
         if (json.message !== 'success') {
           throw new Error();
         }
-        alert('Form submitted succesfully!')
+        alert('Form submitted succesfully!');
+        window.location = '/contact';
       })
       .catch(() => alert('Problem submitting form :('));
 
