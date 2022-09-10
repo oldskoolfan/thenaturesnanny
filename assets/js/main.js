@@ -33,7 +33,7 @@
       first_name: document.querySelector('input[name="firstname"]').value,
       last_name: document.querySelector('input[name="lastname"]').value,
       from: document.querySelector('input[name="email"]').value,
-      message: document.querySelector('input[name="body"]').value,
+      message: document.querySelector('textarea[name="body"]').value,
     };
     
     fetch('https://kxx3sey25cnk5uijjiip7w3a3e0mpiwj.lambda-url.us-east-2.on.aws/', {
