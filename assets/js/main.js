@@ -29,15 +29,6 @@
   };
 
   const sendEmail = () => {
-    // console.log('sending email...');
-
-    // Email.send({
-    //   SecureToken: '',
-    //   To: '',
-    //   From: '',
-    //   Subject: 'test',
-    //   Body: 'this is only a test',
-    // }).then(msg => alert(msg));
     const data = {
       first_name: document.querySelector('input[name="firstname"]').value,
       last_name: document.querySelector('input[name="lastname"]').value,
@@ -53,8 +44,13 @@
       body: JSON.stringify(data),
     })
       .then(resp => resp.json())
-      .then(json => console.debug(json));
-//     alert('Contact form coming soon!');
+      .then(json => {
+        if (json.message !== 'success') {
+          throw new Error();
+        }
+        alert('Form submitted succesfully!')
+      })
+      .catch(() => alert('Problem submitting form :(');
 
     return false;
   };
