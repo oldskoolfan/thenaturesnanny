@@ -50,7 +50,7 @@
         }
         alert('Form submitted succesfully!')
       })
-      .catch(() => alert('Problem submitting form :(');
+      .catch(() => alert('Problem submitting form :('));
 
     return false;
   };
