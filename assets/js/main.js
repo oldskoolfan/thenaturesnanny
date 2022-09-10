@@ -38,7 +38,23 @@
     //   Subject: 'test',
     //   Body: 'this is only a test',
     // }).then(msg => alert(msg));
-    alert('Contact form coming soon!');
+    const data = {
+      first_name: document.querySelector('input[name="firstname"]').value,
+      last_name: document.querySelector('input[name="lastname"]').value,
+      from: document.querySelector('input[name="email"]').value,
+      message: document.querySelector('input[name="body"]').value,
+    };
+    
+    fetch('https://kxx3sey25cnk5uijjiip7w3a3e0mpiwj.lambda-url.us-east-2.on.aws/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+      .then(resp => resp.json())
+      .then(json => console.debug(json));
+//     alert('Contact form coming soon!');
 
     return false;
   };
