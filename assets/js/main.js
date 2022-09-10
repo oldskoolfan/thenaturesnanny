@@ -29,11 +29,21 @@
   };
 
   const sendEmail = () => {
+    const firstName = document.querySelector('input[name="firstname"]').value;
+    const lastName = document.querySelector('input[name="lastname"]').value;
+    const from = document.querySelector('input[name="email"]').value;
+    const message = document.querySelector('textarea[name="body"]').value;
+    
+    if (!firstName || !lastName || !from || !message) {
+     alert('All fields required');
+     return false;
+    }
+    
     const data = {
-      first_name: document.querySelector('input[name="firstname"]').value,
-      last_name: document.querySelector('input[name="lastname"]').value,
-      from: document.querySelector('input[name="email"]').value,
-      message: document.querySelector('textarea[name="body"]').value,
+      first_name: firstName,
+      last_name: lastName,
+      from,
+      message,
     };
     
     fetch('https://kxx3sey25cnk5uijjiip7w3a3e0mpiwj.lambda-url.us-east-2.on.aws/', {
