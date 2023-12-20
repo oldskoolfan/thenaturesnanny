@@ -13,7 +13,7 @@
         active = 'services';
         break;
       case 'our-friends':
-      case 'rememberance':
+      case 'remembrance':
         active = 'photos';
         break;
       default:
